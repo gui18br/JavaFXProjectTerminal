@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d4ee5b20-681c-431e-ab94-493839ebb880" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hellofx/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hellofx/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hellofx/TerminalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hellofx/controllers/TerminalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/MainMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/MainMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/TerminalMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/TerminalMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hellofx/controllers/TerminalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hellofx/controllers/TerminalController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +124,7 @@
       <workItem from="1670969506369" duration="838000" />
       <workItem from="1670978887204" duration="1630000" />
       <workItem from="1670981341598" duration="3132000" />
-      <workItem from="1671057136849" duration="1914000" />
+      <workItem from="1671057136849" duration="2293000" />
     </task>
     <servers />
   </component>

@@ -6,6 +6,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -15,6 +16,8 @@ public class TerminalController {
     private Scene scene;
     private Parent root;
 
+    private Label nameLabel;
+
     public void switchToMainMenu(ActionEvent e) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("MainMenu.fxml"));
         stage = (Stage)((Node)e.getSource()).getScene().getWindow();
@@ -22,4 +25,8 @@ public class TerminalController {
         stage.setScene(scene);
         stage.show();
     }
+
+//    public void displayName() {
+//        nameLabel.setText("aaaaa");
+//    }
 }
