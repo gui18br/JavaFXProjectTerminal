@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d4ee5b20-681c-431e-ab94-493839ebb880" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hellofx/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hellofx/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hellofx/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hellofx/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hellofx/TerminalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hellofx/controllers/TerminalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/MainMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/MainMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/TerminalMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/TerminalMenu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +40,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2ImWRAe7F8yM4uYFq5A8BnnwKGY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -77,12 +83,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="com.example.hellofx.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.hellofx.Main" />
       <module name="JavaFXProjectTerminal - Copia" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.hellofx.*" />
+          <option name="PATTERN" value="com.example.hellofx.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,7 +111,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.example.hellofx.Main" />
+        <item itemvalue="Application.com.example.hellofx.main.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -122,7 +128,7 @@
       <workItem from="1670969506369" duration="838000" />
       <workItem from="1670978887204" duration="1630000" />
       <workItem from="1670981341598" duration="3132000" />
-      <workItem from="1671057136849" duration="977000" />
+      <workItem from="1671057136849" duration="1914000" />
     </task>
     <servers />
   </component>

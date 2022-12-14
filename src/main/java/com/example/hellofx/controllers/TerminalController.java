@@ -1,4 +1,4 @@
-package com.example.hellofx;
+package com.example.hellofx.controllers;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
