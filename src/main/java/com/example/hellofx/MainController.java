@@ -16,6 +16,14 @@ public class MainController {
     private Scene scene;
     private Parent root;
 
+    public void switchToTerminalMenu(ActionEvent e) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("TerminalMenu.fxml"));
+        stage = (Stage)((Node)e.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
     @FXML
     public void onTerminal1Action(ActionEvent e) {
         final Node source = (Node) e.getSource();

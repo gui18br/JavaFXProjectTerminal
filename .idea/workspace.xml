@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4ee5b20-681c-431e-ab94-493839ebb880" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hellofx/Alerts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hellofx/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hellofx/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hellofx/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hellofx/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/pTerminal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/TerminalMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/primeiroMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/MainMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hellofx/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hellofx/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hellofx/TerminalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hellofx/TerminalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/MainMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/MainMenu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +52,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -124,7 +121,7 @@
       <workItem from="1670887137651" duration="7308000" />
       <workItem from="1670969506369" duration="838000" />
       <workItem from="1670978887204" duration="1630000" />
-      <workItem from="1670981341598" duration="2542000" />
+      <workItem from="1670981341598" duration="2859000" />
     </task>
     <servers />
   </component>
