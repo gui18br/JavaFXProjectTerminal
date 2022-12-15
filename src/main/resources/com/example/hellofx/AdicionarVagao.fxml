@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="268.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellofx.AdicionarVagao">
+   <children>
+      <Label layoutX="154.0" layoutY="42.0" text="Adicionar Vagao">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="121.0" text="Identificador do vagao">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField layoutX="239.0" layoutY="122.0" promptText="digite uma letra de a-z" />
+      <Label layoutX="41.0" layoutY="165.0" text="Digite o nome da carga">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField layoutX="239.0" layoutY="165.0" promptText="cobre, ferro, soja, etc" />
+      <Label layoutX="41.0" layoutY="208.0" text="Digite o peso da carga">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField layoutX="239.0" layoutY="208.0" promptText="KG" />
+   </children>
+</AnchorPane>

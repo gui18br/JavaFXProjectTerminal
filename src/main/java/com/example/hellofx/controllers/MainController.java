@@ -1,5 +1,6 @@
 package com.example.hellofx.controllers;
 
+import com.example.hellofx.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,9 +17,15 @@ public class MainController {
     private Scene scene;
     private Parent root;
 
+
+    @FXML
+    protected void btTerminal1Action(ActionEvent e){
+        Main.changeScreen("terminal1");
+    }
+
     @FXML
     public void switchToTerminalMenu(ActionEvent e) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("TerminalMenu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("TerminalMenu1.fxml"));
         stage = (Stage)((Node)e.getSource()).getScene().getWindow();
 
         final Node source = (Node) e.getSource();

@@ -1,4 +1,5 @@
 package com.example.hellofx.controllers;
+import com.example.hellofx.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,6 +18,11 @@ public class TerminalController {
     private Parent root;
 
     private Label nameLabel;
+
+    @FXML
+    protected void btVoltarAction(ActionEvent e){
+        Main.changeScreen("main");
+    }
 
     public void switchToMainMenu(ActionEvent e) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("MainMenu.fxml"));
