@@ -5,18 +5,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="506.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellofx.controllers.TerminalController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="506.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellofx.Main">
    <children>
-      <Label layoutX="124.0" layoutY="31.0" text="Selecione alguma opcao">
+      <Label layoutX="197.0" layoutY="27.0" text="Terminal 1">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Button fx:id="alterStatusStop" layoutX="68.0" layoutY="101.0" mnemonicParsing="false" text="Alterar status para: Parado no terminal" />
+      <Button fx:id="alterStatusStop" layoutX="68.0" layoutY="101.0" mnemonicParsing="false" onAction="#terminalMenuFX" text="Alterar status para: Parado no terminal" />
       <Button layoutX="68.0" layoutY="144.0" mnemonicParsing="false" text="Alterar status para: Em movimento" />
       <Button layoutX="68.0" layoutY="191.0" mnemonicParsing="false" text="Alterar status para: No ponto de interconexão" />
       <Button layoutX="68.0" layoutY="236.0" mnemonicParsing="false" text="Consultar quantidade de desembarques" />
       <Button layoutX="68.0" layoutY="277.0" mnemonicParsing="false" text="Listar vagoes" />
-      <Button layoutX="383.0" layoutY="330.0" mnemonicParsing="false" onAction="#switchToMainMenu" text="Voltar" />
+      <Button layoutX="383.0" layoutY="330.0" mnemonicParsing="false" onAction="#backToMainMenu" text="Voltar" />
    </children>
 </AnchorPane>

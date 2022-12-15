@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4ee5b20-681c-431e-ab94-493839ebb880" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hellofx/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hellofx/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hellofx/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hellofx/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hellofx/controllers/TerminalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hellofx/controllers/TerminalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hellofx/models/Composicao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hellofx/models/Composicao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hellofx/models/Vagao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hellofx/models/Vagao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/MainMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/MainMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/TerminalMenu1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/TerminalMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/TerminalMenu2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hellofx/controllers/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hellofx/controllers/TerminalController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +82,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.hellofx.Main" />
-      <module name="JavaFXProjectTerminal - Copia" />
+      <module name="JavaFXProjectTerminal" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.hellofx.controllers.*" />
@@ -132,6 +126,7 @@
       <workItem from="1670978887204" duration="1630000" />
       <workItem from="1670981341598" duration="3132000" />
       <workItem from="1671057136849" duration="2293000" />
+      <workItem from="1671075917888" duration="293000" />
     </task>
     <servers />
   </component>
