@@ -5,16 +5,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="425.0" prefWidth="339.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellofx.Main">
+<AnchorPane prefHeight="425.0" prefWidth="339.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellofx.Main">
    <children>
       <Label layoutX="85.0" layoutY="33.0" text="Menu de vagões">
          <font>
             <Font size="23.0" />
          </font>
       </Label>
-      <Button layoutX="85.0" layoutY="111.0" mnemonicParsing="false" text="Embarcar produto em vagao" />
-      <Button layoutX="64.0" layoutY="163.0" mnemonicParsing="false" text="Desembarcar produto de um vagçao" />
-      <Button layoutX="118.0" layoutY="213.0" mnemonicParsing="false" text="Transferir vagao" />
+      <Button fx:id="btEmbarcar" layoutX="85.0" layoutY="111.0" mnemonicParsing="false" text="Embarcar produto em vagao" />
+      <Button fx:id="btDesembarcar" layoutX="64.0" layoutY="163.0" mnemonicParsing="false" text="Desembarcar produto de um vagçao" />
+      <Button fx:id="btTransferir" layoutX="118.0" layoutY="213.0" mnemonicParsing="false" text="Transferir vagao" />
       <Button layoutX="138.0" layoutY="272.0" mnemonicParsing="false" onAction="#backToMainMenu" text="Retornar" />
    </children>
 </AnchorPane>

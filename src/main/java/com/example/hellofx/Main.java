@@ -9,6 +9,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -89,12 +91,22 @@ public class Main extends Application {
     }
 
 
+    // ID botoes Menu de vagoes
+    private Button btEmbarcar;
+    private Button btDesembarcar;
+    private Button btTransferir;
 
 
+
+    // ID botoes Menu de Terminais
+    private Button btStatusParado;
+    private Button btStatusMovimento;
+    private Button btStatusPonto;
+    private Button btConsultar;
+    private Button btListar;
 
     @FXML
-    public void terminalMenuFX(){
-        terminalMenu(1, 4);
+    public void terminalMenuFX(){terminalMenu(1, 4);
     }
 
 
@@ -109,6 +121,7 @@ public class Main extends Application {
             switch (opcao) {
                 case 1:
                     composicaoR1.setStatus("Parado no terminal");
+                    System.out.println("Parado no terminal");
                     break;
                 case 2:
                     composicaoR1.setStatus("Em movimento");
@@ -155,4 +168,133 @@ public class Main extends Application {
             }
         }
     }
+    @FXML
+    public void vagoesMenuFX(){vagoesMenu(1, 4);
+    }
+    public static void vagoesMenu(int terminal, int opcao) {
+        System.out.println("1 - Embarcar produto em vagÃ£o ");
+        System.out.println("2 - Desembarcar produto de um vagÃ£o");
+        System.out.println("3 - Transferir vagÃ£o");
+        System.out.println("4 - Retornar");
+
+        switch (opcao) {
+            case 1: {
+                System.out.println("Adicionar Ã  terminal R1 ou R2? (Digite 1 ou 2)");
+                int terminalInput = entrada.nextInt();
+
+                switch (terminalInput) {
+                    case 1:
+                        addVagao(terminalInput);
+                        break;
+                    case 2:
+                        addVagao(terminalInput);
+                        break;
+                }
+                break;
+            }
+            case 2: {
+                System.out.println("Informe o identificador do vagÃ£o que vocÃª deseja remover (Letra de a-z)");
+                char indexVagao = entrada.next().charAt(0);
+                char indexVagaoUpperCase = Character.toUpperCase(indexVagao);
+
+                if (!(composicaoR1.getVagoesPilha().isEmpty()) &&
+                        composicaoR1.getVagoesPilha().peek().getIndexVagao() == indexVagaoUpperCase) {
+                    removerVagao(composicaoR1.getVia());
+                } else if(!(composicaoR2.getVagoesPilha().isEmpty() )&&
+                        composicaoR2.getVagoesPilha().peek().getIndexVagao() == indexVagaoUpperCase){
+                    removerVagao(composicaoR2.getVia());
+                } else {
+                    System.out.println("O identificador nÃ£o se encontra na ponta de nenhum dos terminais");
+                    menu();
+                }
+                break;
+            }
+
+            case 3: {
+                System.out.println("Transferir vagÃ£o do terminal R1 ou R2? (Digite 1 ou 2)");
+                int terminalInput = entrada.nextInt();
+
+                switch (terminalInput) {
+                    case 1:
+                        transferVagao(terminalInput);
+                        break;
+                    case 2:
+                        transferVagao(terminalInput);
+                        break;
+                }
+                break;
+            }
+            case 4: {
+                menu();
+                break;
+            }
+        }
+    }
+
+    // ID entrada de dados dos vagoes
+    private Label indexVagao;
+    private Label nomeCarga;
+    private Label peso;
+
+    public static void addVagaoFX(int indexTerminal) {
+        System.out.println("Identificador do vagÃ£o (Digite uma letra de a-z)");
+        char indexVagao = entrada.next().charAt(0);
+        char indexVagaoUpperCase = Character.toUpperCase(indexVagao);
+        System.out.println("Digite o nome da carga (cobre, ferro, soja, etc)");
+        String nomeCarga = entrada.next();
+        System.out.println("Digite o peso da carga em kilogramas");
+        double qtd = entrada.nextDouble();
+
+        Vagao v = new Vagao(indexVagaoUpperCase, nomeCarga, qtd);
+
+        if (indexTerminal == 1) {
+            v.setTipoCarga(1);
+            for (int i = 0; i < composicaoR1.getVagoesPilha().size(); i++) {
+                if (composicaoR1.getVagoesPilha().get(i).getIndexVagao() == indexVagaoUpperCase) {
+                    System.out.println("Este identificador jÃ¡ foi utilizado");
+                    menu();
+                }
+            }
+            if (composicaoR1.getStatus() == "Parado no terminal") {
+                if (composicaoR1.isEmpilhavel() == true) {
+                    composicaoR1.getVagoesPilha().push(v);
+                } else {
+                    System.out.println(
+                            "Essa locomotiva nÃ£o pode receber um vagÃ£o no momento pois sua posiÃ§Ã£o Ã©: "
+                                    + composicaoR1.getStatus());
+                    menu();
+                }
+            } else {
+                System.out.println("A locomotiva nÃ£o se encontra parada no terminal.");
+                menu();
+            }
+
+        }
+
+        if (indexTerminal == 2) {
+            v.setTipoCarga(2);
+            for (int i = 0; i < composicaoR2.getVagoesPilha().size(); i++) {
+                if (composicaoR2.getVagoesPilha().get(i).getIndexVagao() == indexVagaoUpperCase) {
+                    System.out.println("Este identificador jÃ¡ foi utilizado");
+                    menu();
+                }
+            }
+            if (composicaoR2.getStatus() == "Parado no terminal") {
+                if (composicaoR2.isEmpilhavel() == true) {
+                    composicaoR2.getVagoesPilha().push(v);
+                } else {
+                    System.out.println(
+                            "Essa locomotiva nÃ£o pode receber um vagÃ£o no momento pois sua posiÃ§Ã£o Ã©: "
+                                    + composicaoR2.getStatus());
+                    menu();
+                }
+            } else {
+                System.out.println("A locomotiva nÃ£o se encontra parada no terminal.");
+                menu();
+            }
+
+        }
+        menu();
+    }
+
 }
