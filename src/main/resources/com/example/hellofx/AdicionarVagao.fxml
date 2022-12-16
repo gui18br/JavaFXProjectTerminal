@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="268.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellofx.AdicionarVagao">
+<AnchorPane prefHeight="362.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellofx.Main">
    <children>
-      <Label layoutX="154.0" layoutY="42.0" text="Adicionar Vagao">
+      <Label layoutX="157.0" layoutY="29.0" text="Adicionar Vagao">
          <font>
             <Font size="22.0" />
          </font>
       </Label>
-      <Label layoutX="41.0" layoutY="121.0" text="Identificador do vagao">
+      <Label layoutX="61.0" layoutY="149.0" text="Identificador do vagao">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <TextField fx:id="indexVagao" layoutX="239.0" layoutY="122.0" promptText="digite uma letra de a-z" />
-      <Label layoutX="41.0" layoutY="165.0" text="Digite o nome da carga">
+      <TextField fx:id="indexVagaoAdd" layoutX="259.0" layoutY="150.0" onAction="#addVagaoFX" promptText="digite uma letra de a-z" />
+      <Label layoutX="61.0" layoutY="193.0" text="Digite o nome da carga">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <TextField fx:id="nomeCarga" layoutX="239.0" layoutY="165.0" promptText="cobre, ferro, soja, etc" />
-      <Label layoutX="41.0" layoutY="208.0" text="Digite o peso da carga">
+      <TextField fx:id="nomeVagaoAdd" layoutX="259.0" layoutY="193.0" onAction="#addVagaoFX" promptText="cobre, ferro, soja, etc" />
+      <Label layoutX="61.0" layoutY="236.0" text="Digite o peso da carga">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <TextField fx:id="peso" layoutX="239.0" layoutY="208.0" promptText="KG" />
+      <TextField fx:id="pesoVagaoAdd" layoutX="259.0" layoutY="236.0" onAction="#addVagaoFX" promptText="KG" />
+      <Button fx:id="addSubmit" layoutX="201.0" layoutY="281.0" mnemonicParsing="false" onAction="#addVagaoFX" text="Adicionar" />
+      <RadioButton fx:id="composicaoIndex1" layoutX="70.0" layoutY="98.0" mnemonicParsing="false" onAction="#addVagaoFX" text="Composição 1" />
+      <RadioButton fx:id="composicaoIndex2" layoutX="270.0" layoutY="98.0" mnemonicParsing="false" onAction="#addVagaoFX" text="Composição 2" />
    </children>
 </AnchorPane>

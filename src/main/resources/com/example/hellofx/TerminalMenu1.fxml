@@ -5,18 +5,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="506.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellofx.Main">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="506.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellofx.Main">
    <children>
       <Label layoutX="197.0" layoutY="27.0" text="Terminal 1">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Button fx:id="btTerminalAlterStatus" layoutX="68.0" layoutY="101.0" mnemonicParsing="false" onAction="#terminalMenuFX" text="Alterar status para: Parado no terminal" />
-      <Button fx:id="btStatusMovimento" layoutX="68.0" layoutY="144.0" mnemonicParsing="false" text="Alterar status para: Em movimento" />
-      <Button fx:id="btStatusPonto" layoutX="68.0" layoutY="191.0" mnemonicParsing="false" text="Alterar status para: No ponto de interconexão" />
-      <Button fx:id="btConsultar" layoutX="68.0" layoutY="236.0" mnemonicParsing="false" text="Consultar quantidade de desembarques" />
-      <Button fx:id="btListar" layoutX="68.0" layoutY="277.0" mnemonicParsing="false" text="Listar vagoes" />
+      <Button fx:id="btStatusParado1" layoutX="68.0" layoutY="101.0" mnemonicParsing="false" onAction="#terminalMenuFX" text="Alterar status para: Parado no terminal" />
+      <Button fx:id="btStatusMovimento1" layoutX="68.0" layoutY="144.0" mnemonicParsing="false" onAction="#terminalMenuFX" text="Alterar status para: Em movimento" />
+      <Button fx:id="btStatusPonto1" layoutX="69.0" layoutY="191.0" mnemonicParsing="false" onAction="#terminalMenuFX" text="Alterar status para: No ponto de interconexão" />
+      <Button fx:id="btConsultar1" layoutX="68.0" layoutY="236.0" mnemonicParsing="false" onAction="#terminalMenuFX" text="Consultar quantidade de desembarques" />
+      <Button fx:id="btListar1" layoutX="68.0" layoutY="277.0" mnemonicParsing="false" onAction="#terminalMenuFX" text="Listar vagoes" />
       <Button layoutX="383.0" layoutY="330.0" mnemonicParsing="false" onAction="#backToMainMenu" text="Voltar" />
    </children>
 </AnchorPane>

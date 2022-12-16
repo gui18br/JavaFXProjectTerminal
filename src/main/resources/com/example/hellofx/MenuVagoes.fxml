@@ -5,16 +5,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="425.0" prefWidth="339.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellofx.Main">
+<AnchorPane prefHeight="425.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellofx.Main">
    <children>
-      <Label layoutX="85.0" layoutY="33.0" text="Menu de vagões">
+      <Label layoutX="160.0" layoutY="33.0" text="Menu de vagões">
          <font>
             <Font size="23.0" />
          </font>
       </Label>
-      <Button fx:id="btEmbarcar" layoutX="85.0" layoutY="111.0" mnemonicParsing="false" text="Embarcar produto em vagao" />
-      <Button fx:id="btDesembarcar" layoutX="64.0" layoutY="163.0" mnemonicParsing="false" text="Desembarcar produto de um vagçao" />
-      <Button fx:id="btTransferir" layoutX="118.0" layoutY="213.0" mnemonicParsing="false" text="Transferir vagao" />
-      <Button layoutX="138.0" layoutY="272.0" mnemonicParsing="false" onAction="#backToMainMenu" text="Retornar" />
+      <Button fx:id="btEmbarcar" layoutX="188.0" layoutY="116.0" mnemonicParsing="false" onAction="#vagoesMenuFX" text="Embarcar produto" />
+      <Button fx:id="btDesembarcar" layoutX="178.0" layoutY="163.0" mnemonicParsing="false" onAction="#vagoesMenuFX" text="Desembarcar produto" />
+      <Button fx:id="btTransferir1to2" layoutX="129.0" layoutY="213.0" mnemonicParsing="false" onAction="#vagoesMenuFX" text="Transferir vagão da composição 1 para 2" />
+      <Button layoutX="399.0" layoutY="377.0" mnemonicParsing="false" onAction="#backToMainMenu" text="Retornar" />
+      <Button fx:id="btTransferir12to1" layoutX="129.0" layoutY="265.0" mnemonicParsing="false" onAction="#vagoesMenuFX" text="Transferir vagão da composição 2 para 1" />
    </children>
 </AnchorPane>
