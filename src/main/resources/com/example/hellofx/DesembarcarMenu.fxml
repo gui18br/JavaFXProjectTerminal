@@ -20,5 +20,6 @@
       </Label>
       <TextField fx:id="indexVagaoDesembarcar" layoutX="233.0" layoutY="134.0" onAction="#desembarcarFX" promptText="Digite uma letra de A-Z" />
       <Button fx:id="desembarcarSubmit" layoutX="264.0" layoutY="171.0" mnemonicParsing="false" onAction="#desembarcarFX" text="Desembarcar" />
+      <Button layoutX="542.0" layoutY="218.0" mnemonicParsing="false" onAction="#backToMainMenu" text="Voltar" />
    </children>
 </AnchorPane>

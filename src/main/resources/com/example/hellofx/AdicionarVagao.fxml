@@ -35,5 +35,6 @@
       <Button fx:id="addSubmit" layoutX="201.0" layoutY="281.0" mnemonicParsing="false" onAction="#addVagaoFX" text="Adicionar" />
       <RadioButton fx:id="composicaoIndex1" layoutX="70.0" layoutY="98.0" mnemonicParsing="false" onAction="#addVagaoFX" text="Composição 1" />
       <RadioButton fx:id="composicaoIndex2" layoutX="270.0" layoutY="98.0" mnemonicParsing="false" onAction="#addVagaoFX" text="Composição 2" />
+      <Button layoutX="402.0" layoutY="323.0" mnemonicParsing="false" onAction="#backToMainMenu" text="Voltar" />
    </children>
 </AnchorPane>
