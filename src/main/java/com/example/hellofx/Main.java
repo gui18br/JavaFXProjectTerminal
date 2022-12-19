@@ -111,49 +111,83 @@ public class Main extends Application {
     }
 
     public static void terminalMenu(String opcao) { // MENU TERMINAL
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
         switch(opcao) {
             //TERMINAL 1
             case "btStatusParado1":
                 composicaoR1.setStatus("Parado no terminal");
                 System.out.println("Status do terminal: " + composicaoR1.getStatus());
+                alert.setTitle("Informação");
+                alert.setHeaderText("Status do terminal: " + composicaoR1.getStatus());
+                alert.showAndWait();
                 break;
             case "btStatusMovimento1":
                 composicaoR1.setStatus("Em movimento");
                 System.out.println("Status do terminal: " + composicaoR1.getStatus());
+                alert.setTitle("Informação");
+                alert.setHeaderText("Status do terminal: " + composicaoR1.getStatus());
+                alert.showAndWait();
                 break;
             case "btStatusPonto1":
                 composicaoR1.setStatus("No ponto de interconexão");
                 System.out.println("Status do terminal: " + composicaoR1.getStatus());
+                alert.setHeaderText("Status do terminal: " + composicaoR1.getStatus());
+                alert.showAndWait();
                 break;
             case "btConsultar1":
                 System.out.println(
                         "Neste terminal foram feitos  desembarque(s) de "+ composicaoR1.listarDesembarques() +
                                 " totalizando " + composicaoR1.getQtdDesembarques() + ", desembarque(s)");
+                alert.setTitle("Informação");
+                alert.setHeaderText("Neste terminal foram feitos  desembarque(s) de "+ composicaoR1.listarDesembarques() +
+                        " totalizando " + composicaoR1.getQtdDesembarques() + ", desembarque(s)");
+                alert.showAndWait();
                 break;
             case "btListar1":
                 System.out.println(composicaoR1.getVagoesPilha());
+                alert.setTitle("Informação");
+                alert.setHeaderText("Lista dos vagões");
+                alert.setContentText(composicaoR1.getVagoesPilha().toString());
+                alert.showAndWait();
                 break;
 
             //TERMINAL 2
             case "btStatusParado2":
                 composicaoR2.setStatus("Parado no terminal");
                 System.out.println("Status do terminal: " + composicaoR2.getStatus());
+                alert.setTitle("Informação");
+                alert.setHeaderText("Status do terminal: " + composicaoR2.getStatus());
+                alert.showAndWait();
                 break;
             case "btStatusMovimento2":
                 composicaoR2.setStatus("Em movimento");
                 System.out.println("Status do terminal: " + composicaoR2.getStatus());
+                alert.setTitle("Informação");
+                alert.setHeaderText("Status do terminal: " + composicaoR2.getStatus());
+                alert.showAndWait();
                 break;
             case "btStatusPonto2":
                 composicaoR2.setStatus("No ponto de interconexão");
                 System.out.println("Status do terminal: " + composicaoR2.getStatus());
+                alert.setTitle("Informação");
+                alert.setHeaderText("Status do terminal: " + composicaoR2.getStatus());
+                alert.showAndWait();
                 break;
             case "btConsultar2":
                 System.out.println(
                         "Neste terminal foram feitos  desembarque(s) de "+ composicaoR2.listarDesembarques() +
                         ", totalizando " + composicaoR2.getQtdDesembarques() + " desembarque(s)");
+                alert.setTitle("Informação");
+                alert.setHeaderText("Neste terminal foram feitos  desembarque(s) de "+ composicaoR2.listarDesembarques() +
+                        " totalizando " + composicaoR2.getQtdDesembarques() + ", desembarque(s)");
+                alert.showAndWait();
                 break;
             case "btListar2":
                 System.out.println(composicaoR2.getVagoesPilha());
+                alert.setTitle("Informação");
+                alert.setHeaderText("Lista de vagões");
+                alert.setContentText(composicaoR2.getVagoesPilha().toString());
+                alert.showAndWait();
                 break;
         }
     }
@@ -194,6 +228,7 @@ public class Main extends Application {
     }
 
     public void desembarcar(char inputText) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
         char indexVagaoUpperCase = Character.toUpperCase(inputText);
 
         if (!(composicaoR1.getVagoesPilha().isEmpty()) &&
@@ -205,16 +240,24 @@ public class Main extends Application {
         } else {
             System.out.println("O identificador não se encontra na ponta de nenhum dos terminais");
             System.out.println("Voltar para o menu");
+            alert.setTitle("Atenção!");
+            alert.setHeaderText("O identificador não se encontra na ponta de nenhum dos terminais");
+            alert.showAndWait();
         }
     }
 
     public static void removerVagao(int indexTerminal) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
         if (indexTerminal == 1) {
             if (composicaoR1.getStatus() == "Parado no terminal") {
                 if (composicaoR1.getVagoesPilha().isEmpty() == false) {
                     System.out
                             .println("O vagÃ£o de identificador '" + composicaoR1.getVagoesPilha().peek().getIndexVagao() +
                                     "' foi removido da ponta do terminal "+ indexTerminal);
+                    alert.setTitle("Parabens!");
+                    alert.setHeaderText("O vagão de identificador '"+composicaoR1.getVagoesPilha().peek().getIndexVagao() +
+                            "' foi removido da ponta do terminal " +indexTerminal);
+                    alert.showAndWait();
                     composicaoR1.addDesembarques(composicaoR1.getVagoesPilha().peek().getNomeCarga());
                     composicaoR1.getVagoesPilha().pop();
                     composicaoR1.setQtdDesembarques(composicaoR1.getQtdDesembarques()+1);
@@ -222,10 +265,16 @@ public class Main extends Application {
                 } else {
                     System.out.println("A locomotiva nÃ£o tem vagÃµes com produtos");
                     System.out.println("Voltar para o menu");
+                    alert.setTitle("Atenção!");
+                    alert.setHeaderText("A locomotiva nÃ£o tem vagÃµes com produtos");
+                    alert.showAndWait();
                 }
             } else {
                 System.out.println("A locomotiva nÃ£o se encontra parada no terminal.");
                 System.out.println("Voltar para o menu");
+                alert.setTitle("Atenção!");
+                alert.setHeaderText("A locomotiva nÃ£o se encontra parada no terminal.");
+                alert.showAndWait();
             }
 
         }
@@ -321,6 +370,7 @@ public class Main extends Application {
     }
 
     public static void addVagao(int indexTerminal, char inputText, String nomeText, Double pesoText) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
         char indexVagao = inputText;
         char indexVagaoUpperCase = Character.toUpperCase(indexVagao);
         String nomeCarga  = nomeText;
@@ -335,6 +385,9 @@ public class Main extends Application {
                 if (composicaoR1.getVagoesPilha().get(i).getIndexVagao() == indexVagaoUpperCase) {
                     System.out.println("Este identificador jÃ¡ foi utilizado");
                     System.out.println("Voltar para o menu");
+                    alert.setTitle("Atenção!");
+                    alert.setHeaderText("Este identificador já foi utilizado");
+                    alert.showAndWait();
                 }
             }
             if (composicaoR1.getStatus() == "Parado no terminal") {
@@ -345,10 +398,17 @@ public class Main extends Application {
                             "Essa locomotiva nÃ£o pode receber um vagÃ£o no momento pois sua posiÃ§Ã£o Ã©: "
                                     + composicaoR1.getStatus());
                     System.out.println("Voltar para o menu");
+                    alert.setTitle("Atenção!");
+                    alert.setHeaderText("Essa locomotiva não pode receber um vagão no momento, pois sua possição é: " +
+                            composicaoR1.getStatus());
+                    alert.showAndWait();
                 }
             } else {
                 System.out.println("A locomotiva nÃ£o se encontra parada no terminal.");
                 System.out.println("Voltar para o menu");
+                alert.setTitle("Atenção!");
+                alert.setHeaderText("A locomotiva não se encontra parada no terminal.");
+                alert.showAndWait();
             }
 
         }
@@ -360,6 +420,9 @@ public class Main extends Application {
                 if (composicaoR2.getVagoesPilha().get(i).getIndexVagao() == indexVagaoUpperCase) {
                     System.out.println("Este identificador jÃ¡ foi utilizado");
                     System.out.println("Voltar para o menu");
+                    alert.setTitle("Atenção!");
+                    alert.setHeaderText("Este identificador já foi utilizado");
+                    alert.showAndWait();
                 }
             }
             if (composicaoR2.getStatus() == "Parado no terminal") {
@@ -370,14 +433,22 @@ public class Main extends Application {
                             "Essa locomotiva nÃ£o pode receber um vagÃ£o no momento pois sua posiÃ§Ã£o Ã©: "
                                     + composicaoR2.getStatus());
                     System.out.println("Voltar para o menu");
+                    alert.setTitle("Atenção!");
+                    alert.setHeaderText("Essa locomotiva não pode receber um vagão no momento, pois sua possição é: " +
+                            composicaoR1.getStatus());
+                    alert.showAndWait();
                 }
             } else {
                 System.out.println("A locomotiva nÃ£o se encontra parada no terminal.");
                 System.out.println("Voltar para o menu");
+                alert.setTitle("Atenção!");
+                alert.setHeaderText("A locomotiva não se encontra parada no terminal.");
+                alert.showAndWait();
             }
 
         }
         System.out.println("Voltar para o menu");
+        changeScreen("main");
     }
 
 

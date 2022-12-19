@@ -7,10 +7,6 @@
     <list default="true" id="d4ee5b20-681c-431e-ab94-493839ebb880" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hellofx/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hellofx/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/AdicionarVagao.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/AdicionarVagao.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/MenuVagoes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/MenuVagoes.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/TerminalMenu1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/TerminalMenu1.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/TerminalMenu2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hellofx/TerminalMenu2.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +49,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_directory_selection": "C:/Users/telma/IdeaProjects/HelloFX/src/main/resources/com/example/hellofx",
-    "last_opened_file_path": "C:/Users/aliss/OneDrive/Área de Trabalho/JavaFXProjectTerminal/src/main/resources/com/example/hellofx",
+    "last_opened_file_path": "C:/Users/odran/OneDrive/Área de Trabalho/projeto antigo/JavaFXProjectTerminal",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
