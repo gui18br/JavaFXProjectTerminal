@@ -16,6 +16,6 @@
       <Button fx:id="btDesembarcar" layoutX="178.0" layoutY="163.0" mnemonicParsing="false" onAction="#vagoesMenuFX" text="Desembarcar produto" />
       <Button fx:id="btTransferir1to2" layoutX="129.0" layoutY="213.0" mnemonicParsing="false" onAction="#vagoesMenuFX" text="Transferir vagão da composição 1 para 2" />
       <Button layoutX="399.0" layoutY="377.0" mnemonicParsing="false" onAction="#backToMainMenu" text="Retornar" />
-      <Button fx:id="btTransferir12to1" layoutX="129.0" layoutY="265.0" mnemonicParsing="false" onAction="#vagoesMenuFX" text="Transferir vagão da composição 2 para 1" />
+      <Button fx:id="btTransferir2to1" layoutX="129.0" layoutY="265.0" mnemonicParsing="false" onAction="#vagoesMenuFX" text="Transferir vagão da composição 2 para 1" />
    </children>
 </AnchorPane>
