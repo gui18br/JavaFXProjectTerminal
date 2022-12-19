@@ -225,6 +225,7 @@ public class Main extends Application {
     public void desembarcarFX(ActionEvent e) {
         char inputText = indexVagaoDesembarcar.getText().charAt(0);
         desembarcar(inputText);
+        indexVagaoDesembarcar.clear();
     }
 
     public void desembarcar(char inputText) {
@@ -367,6 +368,9 @@ public class Main extends Application {
         String nomeText = nomeVagaoAdd.getText();
         Double pesoText = Double.parseDouble(pesoVagaoAdd.getText());
         addVagao(composicaoIndex, inputText, nomeText, pesoText);
+        indexVagaoAdd.clear();
+        nomeVagaoAdd.clear();
+        pesoVagaoAdd.clear();
     }
 
     public static void addVagao(int indexTerminal, char inputText, String nomeText, Double pesoText) {
